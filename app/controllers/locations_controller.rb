@@ -2,7 +2,7 @@ class LocationsController < ApplicationController
   before_action :set_location, only: [:show, :edit, :update, :destroy]
 
   include ApplicationHelper
-  
+
   # GET /locations
   # GET /locations.json
   def index
@@ -37,6 +37,7 @@ class LocationsController < ApplicationController
 
   # POST /locations
   # POST /locations.json
+
   def create
     @location = Location.new(location_params)
 
